@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <title>Document</title>
     {% block head %}{% endblock %}
 </head>
+
+<div class="topnav">
+    <a class="active" href="/">Home</a>
+    <a href="/music">Music</a>
+    <a href="/anime">Anime</a>
+    <a href="/videogames">Video Games</a>
+    <a href="/sports">Sports</a>
+</div>
+
 <body>
     {% block body %}{% endblock %}
 </body>
