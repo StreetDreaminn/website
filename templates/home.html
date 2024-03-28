@@ -6,34 +6,28 @@
 
 {% block body %}
 <div class="content">
-    <h1 style="text-align: center">Task Master</h1>
-    {% if tasks|length < 1 %}
-    <h4 style="text-align: center;"> There are no tasks. Create one below! </h4>
-    {% else %}
-
-    <table>
-        <tr>
-            <th>Task</th>
-            <th>Added</th>
-            <th>Actions</th>
-        </tr>
-        {% for task in tasks %}
-            <tr>
-                <td>{{ task.content}}</td>
-                <td>{{ task.date_created.date() }}</td>
-                <td>
-                    <a href="/delete/{{task.id}}">Delete</a>
-                    <br>
-                    <a href="/update/{{task.id}}">Update</a>
-                </td>
-            </tr>
-        {% endfor %}
-    </table>
-    {% endif %}
-
-    <form action="/" method="POST">
-        <input type="text" name="content" id="content">
-        <input type="submit" value="Add Task">
-    </form>
+    <h1 style="text-align: center">Franklin Ifesanya</h1>
 </div>
+
+<img src="static/images/LinkedInPicture.jpg" alt="Picture of Me" class="image">
+
+<br>
+
+<div class="body">
+
+    Hello. Welcome to my website! My name is Franklin Ifesanya. I am a software engineer who is based in London.
+    I was born in London to Nigerian parents. I like listening to music, specifically Hip Hop and Afrobeats.
+    I like watching Anime, which is a Japanese based cartoon, playing video games, and sports such as Football and Basketball.
+    I am interested in watching Marvel movies, learning about the oceans and the hidden mysteries within.
+    I also like learning about different aspect of history such as World War 1 and 2, the Cold War and much more.
+    There is a really good Youtuber I watch that explains many world events called Oversimplified (highly reccommend)
+    I like watching the olympics, specifically the track and field races. I like to bowl on occasion.
+    <br>
+    <br>
+    Please see the links below to my LinkedIn and GitHub:
+    <a href="https://www.linkedin.com/in/franklin-ifesanya-456b3b180/">LinkedIn</a>
+    <a href="https://github.com/StreetDreaminn">GitHub</a>
+
+</div>
+
 {% endblock %}
